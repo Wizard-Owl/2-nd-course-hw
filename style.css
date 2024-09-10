@@ -45,6 +45,7 @@ a {
 
 .top__button {
     border-radius: 30px;
+    border: none;
     background: rgb(156, 3, 50);
     width: 234px;
     height: 49px;
