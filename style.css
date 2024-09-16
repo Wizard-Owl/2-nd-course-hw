@@ -4,7 +4,7 @@
 }
 
 body,
-button{
+button {
     font-family: "Montserrat", sans-serif;
 }
 
@@ -25,7 +25,6 @@ a {
     font-size: 64px;
     font-weight: 600;
     line-height: 70px;
-    text-align: left;
     padding-top: 217px;
     padding-bottom: 32px;
 }
@@ -35,8 +34,8 @@ a {
     font-size: 24px;
     font-weight: 400;
     line-height: 32px;
-    text-align: left;
     padding-bottom: 44px;
+    max-width: 481px;
 }
 
 .top__text_bold {
@@ -70,11 +69,13 @@ a {
     justify-content: center;
     flex-direction: row;
     gap: 32px;
+    padding-top: 128px;
+    padding-bottom: 128px;
 }
 
 .game {
-    margin-top: 128px;
-    margin-bottom: 128px;
+    background-position: center;
+    background-size: cover;
     width: 378px;
     height: 300px;
     border-radius: 17px;
@@ -87,6 +88,12 @@ a {
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
+}
+
+.game:hover {
+    cursor: url("img/cursor.svg"), pointer;
+    box-sizing: border-box;
+    border: 3px solid rgb(68, 210, 255);
 }
 
 .game_1 {
@@ -104,4 +111,57 @@ a {
 .game__text {
     padding-left: 32px;
     padding-bottom: 32px;
+}
+
+button:hover {
+    background: rgb(235, 68, 63);
+    cursor: url("img/cursor.svg"), pointer;
+}
+
+@media(max-width: 768px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .top {
+        height: 735px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .top__title {
+        font-size: 32px;
+        line-height: 39px;
+        text-align: center;
+        padding-top: 239px;
+    }
+
+    .top__text {
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+        max-width: 343px;
+        padding-bottom: 33px;
+    }
+
+    .top__text_bold {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .game-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .game {
+        width: 343px;
+    }
+
+    .game__text {
+        padding-left: 16px;
+    }
 }
