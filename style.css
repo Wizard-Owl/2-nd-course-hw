@@ -23,17 +23,20 @@ a {
 .top__title {
     color: rgb(255, 255, 255);
     font-size: 64px;
-    font-weight: 600;
+    font-weight: 700;
     line-height: 70px;
     padding-top: 217px;
     padding-bottom: 32px;
 }
 
-.top__text {
+.top__text, .seasons__text {
     color: rgb(255, 255, 255);
-    font-size: 24px;
-    font-weight: 400;
+    font-size: 18px;
+    font-weight: 300;
     line-height: 32px;
+}
+
+.top__text_parameters {
     padding-bottom: 44px;
     max-width: 481px;
 }
@@ -42,7 +45,7 @@ a {
     font-weight: 700;
 }
 
-.top__button {
+.top__button, .seasons__button {
     border-radius: 30px;
     border: none;
     background: rgb(156, 3, 50);
@@ -61,10 +64,7 @@ a {
 }
 
 .game-box {
-    background-image: url(img/gamesbg.jpeg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-color: rgb(0, 9, 21);
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -118,6 +118,36 @@ button:hover {
     cursor: url("img/cursor.svg"), pointer;
 }
 
+.seasons-box {
+    background-color: rgb(0, 9, 21);
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 135px;
+    padding-top: 233px;
+    padding-bottom: 233px;
+}
+
+.seasons {
+    width: 584px;
+}
+
+.seasons__title {
+    color: rgb(255, 255, 255);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 59px;
+    text-align: left;
+}
+
+.seasons__text_padding {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+
 @media(max-width: 768px) {
     .center {
         padding-left: 16px;
@@ -152,7 +182,6 @@ button:hover {
     }
 
     .game-box {
-        display: flex;
         flex-direction: column;
         align-items: center;
     }
@@ -163,5 +192,39 @@ button:hover {
 
     .game__text {
         padding-left: 16px;
+    }
+
+    .seasons-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 51px;
+        padding-bottom: 85px;
+        gap: 0;
+    }
+
+    .seasons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 343px;
+    }
+
+    .seasons__title {
+        font-size: 32px;
+        line-height: 39px;
+        text-align: center;
+    }
+
+    .seasons__text {
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 22px;
+        text-align: center;
+    }
+
+    .seasons__image {
+        width: 344px;
+        margin-top: 64px;
     }
 }
