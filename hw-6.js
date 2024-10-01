@@ -43,15 +43,15 @@ arrSort.sort();
 arrSort.pop();
 console.log(arrSort);
 
-// // Задание 7
-// const arrMystery = [9, 8, 7, 6, 5];
-// let userAnswer = +prompt('Попробуйте угадать число в массиве');
+// Задание 7
+const arrMystery = [9, 8, 7, 6, 5];
+let userAnswer = +prompt('Попробуйте угадать число в массиве');
 
-// if (arrMystery.includes(userAnswer) === true) {
-//     alert('Угадал');
-// } else {
-//     alert('Не угадал');
-// }
+if (arrMystery.includes(userAnswer) === true) {
+    alert('Угадал');
+} else {
+    alert('Не угадал');
+}
 
 // Задание 8
 let str = 'abcdef';
@@ -81,15 +81,15 @@ for (let i = 0; i < arrSum.length - 1; i++) {
     console.log(`Сумма ${i + 1} и ${i + 2} элементов = ${sum}`);
 }
 
-// // Задание 11
-// let userAnswer = prompt('Введите целые числа через пробел');
-// const userArr = userAnswer.split(' ');
+// Задание 11
+let userAnswerNum = prompt('Введите целые числа через пробел');
+const userArr = userAnswerNum.split(' ');
 
-// console.log(`Исходный массив чисел: ${userArr}`);
+console.log(`Исходный массив чисел: ${userArr}`);
 
-// const degreeArr = userArr.map(number => number ** 2);
+const degreeArr = userArr.map(number => number ** 2);
 
-// console.log(`Массив квадратов чисел: ${degreeArr}`);
+console.log(`Массив квадратов чисел: ${degreeArr}`);
 
 // Задание 12
 function getLengthWords(arr) {
