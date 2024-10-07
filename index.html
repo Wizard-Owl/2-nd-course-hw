@@ -32,16 +32,24 @@
             <p class="game__text">Игра 3</p>
         </a>
     </div>
-    <div class="seasons-box center">
-        <div class="seasons">
-            <h2 class="seasons__title">Времена года!</h2>
-            <p class="seasons__text seasons__text_padding">Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете к какому времени года он относится</p>
-            <button class="seasons__button" onclick="getSeason()">Играть!</button>
+    <div class="game-block-box center">
+        <div class="game-block">
+            <h2 class="game-block__title">Времена года!</h2>
+            <p class="game-block__text game-block__text_padding">Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете к какому времени года он относится</p>
+            <button class="game-block__button" onclick="getSeason()">Играть!</button>
         </div>
-        <img class="seasons__image" src="img/videogame-img.svg" alt="Игра Времена года">
+        <img class="game-block__image" src="img/game-season.svg" alt="Игра Времена года">
+    </div>
+    <div class="game-block-box game-block-box_parameters center">
+        <div class="game-block">
+            <h2 class="game-block__title">Запомни слова</h2>
+            <p class="game-block__text game-block__text_padding">При нажатии на кнопку играть, вы увидите несколько слов, которые вам необходимо запомнить.</p>
+            <button class="game-block__button" onclick="getFruitsResult()">Играть</button>
+        </div>
+        <img class="game-block__image" src="img/game-words.svg" alt="Игра Запомни слова">
     </div>
     <script src="index-games.js"></script>
-    <script src="hw-6.js"></script>
+    <script src="hw-7.js"></script>
 </body>
 
 </html>

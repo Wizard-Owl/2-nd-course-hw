@@ -29,7 +29,7 @@ a {
     padding-bottom: 32px;
 }
 
-.top__text, .seasons__text {
+.top__text, .game-block__text {
     color: rgb(255, 255, 255);
     font-size: 18px;
     font-weight: 300;
@@ -45,7 +45,7 @@ a {
     font-weight: 700;
 }
 
-.top__button, .seasons__button {
+.top__button, .game-block__button {
     border-radius: 30px;
     border: none;
     background: rgb(156, 3, 50);
@@ -118,7 +118,7 @@ button:hover {
     cursor: url("img/cursor.svg"), pointer;
 }
 
-.seasons-box {
+.game-block-box {
     background-color: rgb(0, 9, 21);
     display: flex;
     justify-content: center;
@@ -129,11 +129,17 @@ button:hover {
     padding-bottom: 233px;
 }
 
-.seasons {
+.game-block-box_parameters {
+    padding-top: 239px;
+    padding-bottom: 239px;
+    flex-direction: row-reverse;
+}
+
+.game-block {
     width: 584px;
 }
 
-.seasons__title {
+.game-block__title {
     color: rgb(255, 255, 255);
     font-family: 'Montserrat', sans-serif;
     font-size: 48px;
@@ -142,7 +148,7 @@ button:hover {
     text-align: left;
 }
 
-.seasons__text_padding {
+.game-block__text_padding {
     padding-top: 32px;
     padding-bottom: 32px;
 }
@@ -194,7 +200,7 @@ button:hover {
         padding-left: 16px;
     }
 
-    .seasons-box {
+    .game-block-box {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -203,27 +209,27 @@ button:hover {
         gap: 0;
     }
 
-    .seasons {
+    .game-block {
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 343px;
     }
 
-    .seasons__title {
+    .game-block__title {
         font-size: 32px;
         line-height: 39px;
         text-align: center;
     }
 
-    .seasons__text {
+    .game-block__text {
         font-size: 14px;
         font-weight: 300;
         line-height: 22px;
         text-align: center;
     }
 
-    .seasons__image {
+    .game-block__image {
         width: 344px;
         margin-top: 64px;
     }
