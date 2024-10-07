@@ -25,8 +25,9 @@ console.log(Math.ceil(number32));
 console.log(Math.round(number32));
 
 // Задание 4
-console.log(Math.max(52, 53, 49, 77, 21, 32));
-console.log(Math.min(52, 53, 49, 77, 21, 32));
+const numbers = [52, 53, 49, 77, 21, 32];
+console.log(Math.max(...numbers));
+console.log(Math.min(...numbers));
 
 // Задание 5
 function getRandom() {
