@@ -24,7 +24,7 @@
             max-width: 343px;
             padding-bottom: 33px;
 
-            &_bold {
+            &-bold {
                 font-size: 14px;
                 line-height: 22px;
             }
@@ -62,11 +62,6 @@
                 text-align: center;
             }
 
-            &__image {
-                width: 344px;
-                margin-top: 64px;
-            }
-
             &-box {
                 display: flex;
                 flex-direction: column;
@@ -74,6 +69,11 @@
                 padding-top: 51px;
                 padding-bottom: 85px;
                 gap: 0;
+
+                &__image {
+                    width: 344px;
+                    margin-top: 64px;
+                }
             }
 
             &-riddles {

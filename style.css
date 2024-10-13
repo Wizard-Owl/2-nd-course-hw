@@ -37,7 +37,7 @@ a {
   padding-bottom: 44px;
   max-width: 481px;
 }
-.top__text_bold {
+.top__text-bold {
   font-weight: 700;
 }
 .top__button, .game-button {
@@ -200,7 +200,7 @@ button:hover {
     max-width: 343px;
     padding-bottom: 33px;
   }
-  .top__text_bold {
+  .top__text-bold {
     font-size: 14px;
     line-height: 22px;
   }
@@ -231,10 +231,6 @@ button:hover {
     line-height: 22px;
     text-align: center;
   }
-  .game-block__image {
-    width: 344px;
-    margin-top: 64px;
-  }
   .game-block-box {
     display: flex;
     flex-direction: column;
@@ -242,6 +238,10 @@ button:hover {
     padding-top: 51px;
     padding-bottom: 85px;
     gap: 0;
+  }
+  .game-block-box__image {
+    width: 344px;
+    margin-top: 64px;
   }
   .game-block-riddles {
     padding-top: 51px;
