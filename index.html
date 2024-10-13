@@ -21,35 +21,46 @@
         <button class="top__button">Поехали!</button>
     </div>
 
-    <div class="game-box center">
-        <a class="game game_1" href="#">
+    <div class="game-box center" id="choise-games">
+        <a class="game game_1" href="#game-seasons">
             <p class="game__text">Игра 1</p>
         </a>
-        <a class="game game_2" href="#">
+        <a class="game game_2" href="#game-words">
             <p class="game__text">Игра 2</p>
         </a>
-        <a class="game game_3" href="#">
+        <a class="game game_3" href="#game-riddles">
             <p class="game__text">Игра 3</p>
         </a>
     </div>
-    <div class="game-block-box center">
+    <div class="game-block-box center" id="game-seasons">
         <div class="game-block">
             <h2 class="game-block__title">Времена года!</h2>
-            <p class="game-block__text game-block__text_padding">Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете к какому времени года он относится</p>
-            <button class="game-block__button" onclick="getSeason()">Играть!</button>
+            <p class="game-block__text game-block__text_padding">Нажмите кнопку играть, введите номер месяца (от 1 до
+                12) и вы узнаете к какому времени года он относится</p>
+            <button class="game-button" onclick="getSeason()">Играть!</button>
         </div>
         <img class="game-block__image" src="img/game-season.svg" alt="Игра Времена года">
     </div>
-    <div class="game-block-box game-block-box_parameters center">
+    <div class="game-block-box game-block-box_parameters center" id="game-words">
         <div class="game-block">
             <h2 class="game-block__title">Запомни слова</h2>
-            <p class="game-block__text game-block__text_padding">При нажатии на кнопку играть, вы увидите несколько слов, которые вам необходимо запомнить.</p>
-            <button class="game-block__button" onclick="getFruitsResult()">Играть</button>
+            <p class="game-block__text game-block__text_padding">При нажатии на кнопку играть, вы увидите несколько
+                слов, которые вам необходимо запомнить.</p>
+            <button class="game-button" onclick="getFruitsResult()">Играть</button>
         </div>
         <img class="game-block__image" src="img/game-words.svg" alt="Игра Запомни слова">
     </div>
+    <div class="game-block-riddles center" id="game-riddles">
+        <h2 class="game-block-riddles__title">Игра в загадки</h2>
+        <p class="game-block-riddles__text">Компьютер загадывает загадку, вам необходимо ее угадать, если вы дадите не
+            правильный ответ, то компьютер даст вам подсказку. У вас будет три попытки и две подсказки.</p>
+        <button class="game-button" onclick="getRiddleResult()">Играть!</button>
+    </div>
+    <div class="footer">
+        <p class="footer__text">Все права защищены</p>
+    </div>
     <script src="index-games.js"></script>
-    <script src="hw-7.js"></script>
+    <script src="hw/hw-8.js"></script>
 </body>
 
 </html>

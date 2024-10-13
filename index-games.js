@@ -1,5 +1,7 @@
+let index = 0;
+
 let getSeason = () => {
-    let month = +prompt('Введите число от 1 до 12');
+    const month = +prompt('Введите число от 1 до 12');
 
     if (month >= 3 && month <= 5) {
         alert('Весна');
@@ -56,5 +58,46 @@ let getFruitsResult = () => {
         } else {
             alert('Вы были близки к победе!');
         }
+    }
+}
+
+let getRiddleResult = () => {
+    const riddles = [
+        { riddle: 'Что может путешествовать по свету, оставаясь в одном и том же углу?', answer: 'марка', firstHint: 'Это что-то маленькое, что можно наклеить', secondHint: 'Это используется для отправки писем' },
+        { riddle: 'Что увеличивается, когда его делишь?', answer: 'знание', firstHint: 'Что можно отдавать другим, не теряя его при этом?', secondHint: 'Мы часто получаем это в образовательных учреждениях и из книг' },
+        { riddle: 'Что может подниматься и опускаться, не двигаясь?', answer: 'температура', firstHint: 'Это что-то, что постоянно изменяется в зависимости от времени года', secondHint: 'Это измеряют с помощью термометра' },
+        { riddle: 'Что с пола за хвост не поднимешь?', answer: 'клубок', firstHint: 'Это может быть связано с рукоделием и вязанием', secondHint: 'Это что-то небольшое и круглое, состоящее из нитей' }
+    ]
+
+    let userAnswer = prompt(riddles[index].riddle);
+    let mistakes = 0;
+
+    while (mistakes < 3) {
+        if (userAnswer === '') {
+            userAnswer = prompt(`Вы не ввели ответ, пожалуйста, попробуйте еще раз. ${riddles[index].riddle}`);
+        } else if (userAnswer === null) {
+            break;
+        }
+        else {
+            if (mistakes === 0 && userAnswer.toLowerCase() !== riddles[index].answer.toLowerCase()) {
+                userAnswer = prompt(`Подсказка: \n${riddles[index].firstHint}`);
+                mistakes += 1;
+            } else if (mistakes === 1 && userAnswer.toLowerCase() !== riddles[index].answer.toLowerCase()) {
+                userAnswer = prompt(`Подсказка: \n${riddles[index].secondHint}`);
+                mistakes += 1;
+            } else if (mistakes === 2 && userAnswer.toLowerCase() !== riddles[index].answer.toLowerCase()) {
+                alert(`Вы проиграли, правильный ответ - ${riddles[index].answer}`);
+                mistakes += 1;
+            } else {
+                alert('Поздравляю, вы победили!')
+                break;
+            }
+        }
+    }
+
+    if (index === riddles.length - 1) {
+        index = 0;
+    } else {
+        index += 1;
     }
 }

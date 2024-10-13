@@ -1,0 +1,95 @@
+@media(max-width: 768px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .top {
+        height: 735px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__title {
+            font-size: 32px;
+            line-height: 39px;
+            text-align: center;
+            padding-top: 239px;
+        }
+
+        &__text {
+            font-size: 14px;
+            line-height: 22px;
+            text-align: center;
+            max-width: 343px;
+            padding-bottom: 33px;
+
+            &_bold {
+                font-size: 14px;
+                line-height: 22px;
+            }
+        }
+    }
+
+    .game {
+        width: 343px;
+
+        &-box {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__text {
+            padding-left: 16px;
+        }
+
+        &-block {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 343px;
+
+            &__title {
+                font-size: 32px;
+                line-height: 39px;
+                text-align: center;
+            }
+
+            &__text {
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 22px;
+                text-align: center;
+            }
+
+            &__image {
+                width: 344px;
+                margin-top: 64px;
+            }
+
+            &-box {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-top: 51px;
+                padding-bottom: 85px;
+                gap: 0;
+            }
+
+            &-riddles {
+                padding-top: 51px;
+                padding-bottom: 487px;
+
+                &__title {
+                    font-size: 32px;
+                    line-height: 39px;
+                }
+
+                &__text {
+                    font-size: 14px;
+                    line-height: 22px;
+                }
+            }
+        }
+    }
+}
