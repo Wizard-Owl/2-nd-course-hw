@@ -92,11 +92,11 @@ a {
     &_2 {
         background-image: url(img/game_2.jpeg);
     }
-    
+
     &_3 {
         background-image: url(img/game_3.jpeg);
     }
-    
+
     &__text {
         padding-left: 32px;
         padding-bottom: 32px;
@@ -111,14 +111,14 @@ a {
         padding-top: 128px;
         padding-bottom: 128px;
     }
-        
+
     &-button {
         @extend .top__button;
     }
 
-    &-block{
+    &-block {
         width: 584px;
-        
+
         &__title {
             color: rgb(255, 255, 255);
             font-size: 48px;
@@ -126,7 +126,7 @@ a {
             line-height: 59px;
             text-align: left;
         }
-        
+
         &__text {
             @extend .top__text;
 
@@ -171,7 +171,7 @@ a {
                 font-weight: 700;
                 line-height: 59px;
             }
-            
+
             &__text {
                 color: rgb(255, 255, 255);
                 font-size: 18px;
