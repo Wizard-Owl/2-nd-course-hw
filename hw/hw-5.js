@@ -1,16 +1,16 @@
 // Задание 1
 function comparison(a, b) {
-    if (a > b) {
-        return num1;
+    if (a < b) {
+        return a;
     } else {
-        return num2;
+        return b;
     }
 }
 
 let num1 = +prompt('Введите первое число');
 let num2 = +prompt('Введите второе число');
 
-console.log(`Большее число ${comparison(num1, num2)}`);
+console.log(`Меньшее число ${comparison(num1, num2)}`);
 
 // Задание 2
 let parityNumber = function (number) {
@@ -41,13 +41,13 @@ console.log(`Квадрат числа: ${returnSquare(number)}`);
 
 // Задание 4
 let returnMessage = () => {
-    let age = prompt('Сколько тебе лет?')
+    let age = prompt('Сколько тебе лет?');
     if (age < 0) {
         alert('Вы ввели неправильное значение');
-    } else if (age >= 0 & age <= 12) {
+    } else if (age >= 0 && age <= 12) {
         alert('Привет, друг!');
     } else {
-        alert('Добро пожаловать!')
+        alert('Добро пожаловать!');
     }
 }
 
