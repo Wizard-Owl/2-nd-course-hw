@@ -2,7 +2,7 @@
 let a = 10;
 alert(a);
 a = 20;
-alert (a);
+alert(a);
 
 // Задание 2
 let releaseIphone = 2007;
@@ -15,10 +15,10 @@ alert(nameСreator);
 // Задание 4
 let number1 = 10;
 let number2 = 2;
-alert (number1 + number2);
-alert (number1 - number2);
-alert (number1 * number2);
-alert (number1 / number2);
+alert(number1 + number2);
+alert(number1 - number2);
+alert(number1 * number2);
+alert(number1 / number2);
 
 // Задание 5
 let result = 2 ** 5;
