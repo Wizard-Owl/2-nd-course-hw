@@ -8,7 +8,7 @@ function searchStart(arr, str) {
     const filterArr = [];
 
     for (i = 0; i < arr.length; i++) {
-        if (arr[i].toLowerCase().startsWith(str.toLowerCase()) === true) {
+        if (arr[i].toLowerCase().startsWith(str.toLowerCase())) {
             filterArr.push(arr[i]);
         }
     }
@@ -73,14 +73,13 @@ console.log(currentDate.toLocaleDateString('ru-RU', options));
 
 // Задание 10
 function getFormattedDateTime(date) {
-    let enteredDate = new Date(date);
     const days = ["воскресенье", "понедельник", "вторник", "среда", "четверг", "пятница", "суббота"];
-    const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
-    let fullDate = 'Дата: ' + enteredDate.getDate() + ' ' + months[enteredDate.getMonth()] + ' ' + enteredDate.getFullYear() + ' ' + '- это ' + days[enteredDate.getDay()];
-    let time = 'Время: ' + enteredDate.getHours() + ':' + enteredDate.getMinutes() + ':' + enteredDate.getSeconds();
+    const months = ["января", "февраля", "марта", "апреля", "мая", "июня", "июля", "августа", "сентября", "октября", "ноября", "декабря"];
+    let fullDate = 'Дата: ' + date.getDate() + ' ' + months[date.getMonth()] + ' ' + date.getFullYear() + ' ' + '- это ' + days[date.getDay()];
+    let time = 'Время: ' + date.getHours() + ':' + date.getMinutes() + ':' + date.getSeconds();
 
     console.log(fullDate);
     console.log(time);
 }
 
-getFormattedDateTime('31 December 2024 12:40:50');
+getFormattedDateTime(new Date());

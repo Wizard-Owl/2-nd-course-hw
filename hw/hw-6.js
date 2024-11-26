@@ -47,7 +47,7 @@ console.log(arrSort);
 const arrMystery = [9, 8, 7, 6, 5];
 let userAnswer = +prompt('Попробуйте угадать число в массиве');
 
-if (arrMystery.includes(userAnswer) === true) {
+if (arrMystery.includes(userAnswer)) {
     alert('Угадал');
 } else {
     alert('Не угадал');
@@ -95,12 +95,9 @@ console.log(`Массив квадратов чисел: ${degreeArr}`);
 function getLengthWords(arr) {
     console.log(`Исходный массив строк: ${arr}`);
 
-    arrLength = [];
-
-    arr.forEach((el) => {
-        arrLength.push(el.length);
-    });
-    console.log(arrLength);
+    arrLength = arr.map(str => str.length);
+    
+    console.log(`Массив длины строк: ${arrLength}`);
 }
 
 getLengthWords(['слово', 'произведение', 'слог', 'длинное предложение', 'буква']);
@@ -120,7 +117,7 @@ filterPositive([-25, 25, 0, -1000, -2]); // => [-25, -1000, -2]
 const arrRandom = [];
 
 for (i = 0; i <= 9; i++) {
-    arrRandom[i] = Math.floor(Math.random(0, 10) * 10);
+    arrRandom[i] = Math.round(Math.random() * 10);
 }
 
 console.log(`Массив рандомных элементов: ${arrRandom}`);
@@ -133,11 +130,11 @@ console.log(`Массив четных элементов: ${arrParity}`);
 const arrNumbsRandom = [];
 
 for (i = 0; i <= 5; i++) {
-    arrNumbsRandom[i] = Math.floor(Math.random(0, 10) * 10);
+    arrNumbsRandom[i] = Math.round(Math.random() * 10);
 }
 
 console.log(`Массив рандомных элементов: ${arrNumbsRandom}`);
 
 const arrAverage = arrNumbsRandom.reduce((total, number) => total + number) / arrNumbsRandom.length;
 
-console.log(`Среднее арифметическое элементов массива: ${arrAverage}`);
+console.log(`Среднее арифметическое элементов массива: ${arrAverage.toFixed(4)}`);
